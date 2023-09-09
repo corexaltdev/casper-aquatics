@@ -1,15 +1,26 @@
-// tailwind.config.cjs
-const { nextui } = require("@nextui-org/react");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    // ...
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
-  ],
-  theme: {
-    extend: {},
-  },
-  darkMode: "class",
-  plugins: [nextui()]
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	darkMode: "class",
+	theme: {
+		extend: {
+			colors: {
+				body: "rgb(var(--color-bg))",
+				"box-bg": "rgb(var(--color-box))",
+				"box-shadow": "rgb(var(--box-sd))",
+				"box-border": "rgb(var(--box-border))",
+				primary: "#1E1E1E",
+				"heading-1": "rgb(var(--heading-1))",
+				"heading-2": "rgb(var(--heading-2))",
+				"heading-3": "rgb(var(--heading-3))",
+			},
+      backgroundImage: {
+        'hero-bg': "url('/public/arowana.png')"
+      },
+			screens:{
+				midmd:"880px"
+			}
+		},
+	},
+	plugins: [],
 }
