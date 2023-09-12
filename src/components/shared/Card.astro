@@ -1,13 +1,14 @@
 ---
 export interface Props{
-    name:string,
+    name: string,
+    imgData: ImageMetadata
 }
 
-const {name} = Astro.props
+const {name,imgData} = Astro.props
 ---
-<div class="pb-2.5 bg-white rounded-[20px] flex-col justify-start items-center gap-2.5 inline-flex">
-    <div class="w-[247px] h-[247px] relative">
-        <div class="w-[247px] h-[247px] left-0 top-0 absolute bg-zinc-100"></div>
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+    <img class="w-full" src={imgData.src} alt="Sunset in the mountains">
+    <div class="px-6 py-3 bg-slate-50">
+        <div class="font-bold text-xl">{name}</div>
     </div>
-    <div class="w-[137px] text-center text-neutral-700 text-2xl font-normal">{name}</div>
 </div>
