@@ -1,0 +1,13 @@
+---
+export interface Props{
+    name:string,
+}
+
+const {name} = Astro.props
+---
+<div class="pb-2.5 bg-white rounded-[20px] flex-col justify-start items-center gap-2.5 inline-flex">
+    <div class="w-[247px] h-[247px] relative">
+        <div class="w-[247px] h-[247px] left-0 top-0 absolute bg-zinc-100"></div>
+    </div>
+    <div class="w-[137px] text-center text-neutral-700 text-2xl font-normal">{name}</div>
+</div>

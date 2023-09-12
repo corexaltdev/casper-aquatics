@@ -1,42 +1,14 @@
 ---
-import Button from "../shared/Button.astro";
-import Container from "../shared/Container.astro";
-import Paragraph from "../shared/Paragraph.astro";
-// import ByNumber from "./ByNumber.astro";
+import Card from "../shared/Card.astro";
 
 ---
-
 <section class="w-full relative">
-    <div class="w-full h-[582px] px-64 bg-neutral-800 justify-center items-center inline-flex">
-        <div class="grow shrink basis-0 self-stretch py-[70px] flex-col justify-start items-center gap-[30px] inline-flex">
-          <div class="text-center text-white text-4xl font-bold">Our products</div>
-          <div class="self-stretch justify-between items-center gap-10 inline-flex">
-            <div class="pb-2.5 bg-white rounded-[20px] flex-col justify-start items-center gap-2.5 inline-flex">
-              <div class="w-[247px] h-[247px] relative">
-                <div class="w-[247px] h-[247px] left-0 top-0 absolute bg-zinc-100"></div>
-              </div>
-              <div class="w-[137px] text-center text-neutral-700 text-2xl font-normal">Product title</div>
-            </div>
-            <div class="pb-2.5 bg-white rounded-[20px] flex-col justify-start items-center gap-2.5 inline-flex">
-              <div class="w-[247px] h-[247px] relative">
-                <div class="w-[247px] h-[247px] left-0 top-0 absolute bg-zinc-100"></div>
-              </div>
-              <div class="w-[137px] text-center text-neutral-700 text-2xl font-normal">Product title</div>
-            </div>
-            <div class="pb-2.5 bg-white rounded-[20px] flex-col justify-start items-center gap-2.5 inline-flex">
-              <div class="w-[247px] h-[247px] relative">
-                <div class="w-[247px] h-[247px] left-0 top-0 absolute bg-zinc-100"></div>
-              </div>
-              <div class="w-[137px] text-center text-neutral-700 text-2xl font-normal">Product title</div>
-            </div>
-            <div class="pb-2.5 bg-white rounded-[20px] flex-col justify-start items-center gap-2.5 inline-flex">
-              <div class="w-[247px] h-[247px] relative">
-                <div class="w-[247px] h-[247px] left-0 top-0 absolute bg-zinc-100"></div>
-              </div>
-              <div class="w-[137px] text-center text-neutral-700 text-2xl font-normal">Product title</div>
-            </div>
-          </div>
-          <div class="self-stretch text-white text-2xl font-normal">See more</div>
-        </div>
-      </div>
+  <div class="w-full h-[582px] px-64 bg-neutral-800">
+    <div class="w-full relative pt-10">
+      <div class="text-center text-white text-4xl font-bold">Our products</div>
+    </div>
+    <div class="w-full relative pt-10">
+      <Card name="test"/>
+      <div class="self-stretch text-white text-2xl font-normal">See more</div>
+  </div>
 </section>
